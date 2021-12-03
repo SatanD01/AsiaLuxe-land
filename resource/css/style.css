@@ -817,4 +817,17 @@ a.phone-block:hover {
     .footer-info-block > div:not(:last-child) {
         margin-bottom: 40px;
     }
+    .qr-code {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .qr-code-block {
+        flex-direction: column;
+    }
+    .phone-block > div > div {
+        flex-direction: column;
+    }
+    .phone-block > div > div a:not(:last-child) {
+        margin-right: 0;
+    }
 }
