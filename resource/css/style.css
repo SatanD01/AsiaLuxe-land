@@ -738,7 +738,7 @@ a.phone-block:hover {
     }
 
     .languagepicker li {
-        padding: 0;
+        padding: 0px 10px;
     }
 
     span.qr-code-block-title {
@@ -785,6 +785,26 @@ a.phone-block:hover {
     .content h1 {
         font-size: 25px;
         letter-spacing: 20px;
+    }
+    .social-links a:first-child {
+        margin-left: 0;
+    }
+    .phone-img-block {
+        display: none;
+    }
+
+    .phone-block > div > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phone-block > div > div a:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .phone-block > div > div a {
+        margin-bottom: 0 !important;
     }
 }
 
