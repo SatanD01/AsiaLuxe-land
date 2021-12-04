@@ -59,5 +59,10 @@ $(function () {
 
   AOS.init();
 
+  $(".setCurBtn").click(function(){
+    $(this).parents(".dropdown-menu").removeClass("show");
+    $.get("/",{setCur:$(this).attr("data-val")},function(){location.reload()})
+  })
+
   $('.parallax-window').parallax({imageSrc: '../images/par-bg.jpg'});
 });

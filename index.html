@@ -17,33 +17,58 @@
 
     <body>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-sm-8 col-6 block-logo">
-                    <a href="#" class="logo"></a>
-                </div>
-                <div class="col-lg-2 col-sm-4 col-6 block-language d-sm-flex justify-content-sm-end">
-                    <ul class="languagepicker m-sm-0">
-                        <a href="#ru">
-                            <li>
-                                <img src="resource/images/lang/lang-ru.png" width="20" height="10"/>
-                                Русский
-                                <span><i class="fas fa-angle-down"></i></span>
-                            </li>
-                        </a>
-                        <a href="#en">
-                            <li>
-                                <img src="resource/images/lang/lang-en.png" width="20" height="10"/>
-                                English
-                            </li>
-                        </a>
-                    </ul>
+<!--    <header>-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-10 col-sm-8 col-6 block-logo">-->
+<!--                    <a href="#" class="logo"></a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-2 col-sm-4 col-6 block-language d-sm-flex justify-content-sm-end">-->
+<!--                    <ul class="languagepicker m-sm-0">-->
+<!--                        <a href="#ru">-->
+<!--                            <li>-->
+<!--                                <img src="resource/images/lang/lang-ru.png" width="20" height="10"/>-->
+<!--                                Русский-->
+<!--                                <span><i class="fas fa-angle-down"></i></span>-->
+<!--                            </li>-->
+<!--                        </a>-->
+<!--                        <a href="#en">-->
+<!--                            <li>-->
+<!--                                <img src="resource/images/lang/lang-en.png" width="20" height="10"/>-->
+<!--                                English-->
+<!--                            </li>-->
+<!--                        </a>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </header>-->
+
+<header class="py-1 bg-white f-roboto shp sticky-top" style="">
+    <div class="container py-1">
+        <div class="d-flex align-items-center justify-content-between">
+            <a title="Национальный туроператор Узбекистана" href="/"><img width="120px" src="resource/images/logo.svg"></a>
+            <div class="d-flex align-items-center">
+                <div class="dropdown ml-3">
+                    <a
+                            class="d-block btn btn-sm bc-grey color-inherit dropdown-toggle d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         RU / UZS		</a>
+                    <div style="min-width: auto; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-67px, 32px, 0px);" class="dropdown-menu dropdown-menu-right px-3 py-2" x-placement="bottom-end">
+                        <a href="?setLang=ru" class="dropdown-item px-0 d-flex align-items-center mb-1"><img
+                                src="resource/images/ru.jpg" width="30px" class="mr-1 br-block br-grey">Русский</a>
+                        <a href="?setLang=uz" class="dropdown-item px-0 d-flex align-items-center mb-1"><img
+                                src="resource/images/uz.jpg" width="30px" class="mr-1 br-block">O'zbek</a>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-    </header>
+
+    </div>
+
+</header>
 
     <div class="video">
         <div class="banner-video">
@@ -395,77 +420,155 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-info">
-            <div class="container">
-                <div class="footer-info-block">
-                    <div >
-                        <div class="footer-blocks d-flex flex-column align-items-start justify-content-center">
-                            <a href="#" class="footer-text">
-                                <i class="fas fa-user-friends"></i>
-                                Агенствам
-                            </a>
-                            <a href="#" class="footer-text">
-                                О компании
-                            </a>
-                            <a href="#" class="footer-text">
-                                Публичная оферта
-                            </a>
-                        </div>
-                        <div class="footer-blocks d-flex flex-column align-items-start justify-content-center">
-                        <span class="footer-text">
-                            Официальный агент
-                        </span>
-                        <div class="uz-air">
-                            <img src="resource/images/uz-air.png" alt="">
-                        </div>
-                    </div>
-                    </div>
+<!--    <footer>-->
+<!--        <div class="footer-info">-->
+<!--            <div class="container">-->
+<!--                <div class="footer-info-block">-->
+<!--                    <div >-->
+<!--                        <div class="footer-blocks d-flex flex-column align-items-start justify-content-center">-->
+<!--                            <a href="#" class="footer-text">-->
+<!--                                <i class="fas fa-user-friends"></i>-->
+<!--                                Агенствам-->
+<!--                            </a>-->
+<!--                            <a href="#" class="footer-text">-->
+<!--                                О компании-->
+<!--                            </a>-->
+<!--                            <a href="#" class="footer-text">-->
+<!--                                Публичная оферта-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="footer-blocks d-flex flex-column align-items-start justify-content-center">-->
+<!--                        <span class="footer-text">-->
+<!--                            Официальный агент-->
+<!--                        </span>-->
+<!--                        <div class="uz-air">-->
+<!--                            <img src="resource/images/uz-air.png" alt="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div class="footer-blocks d-flex flex-column align-items-start justify-content-center">-->
+<!--                            <span class="footer-text">-->
+<!--                                Принимаем к оплате-->
+<!--                            </span>-->
+<!--                            <div class="pay-img-block d-flex align-items-center justify-content-between">-->
+<!--                                <img src="resource/images/uzcard.png" alt="">-->
+<!--                                <img src="resource/images/visa.png" alt="">-->
+<!--                                <img src="resource/images/master.png" alt="">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="footer-blocks d-flex align-items-center justify-content-center">-->
+<!--                        <div class="footer-qr">-->
+<!--                            <img src="resource/images/qrcode-footer.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="footer-social-block">-->
+<!--                            <div class="social-block">-->
+<!--                                <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+<!--                                <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                                <a href="#"><i class="fab fa-telegram-plane"></i></a>-->
+<!--                                <a href="#"><i class="fab fa-youtube"></i></a>-->
+<!--                            </div>-->
+<!--                            <div class="footer-phone">-->
+<!--                                <a href="tel:+998712017777">-->
+<!--                                    <i class="fas fa-phone-volume"></i>-->
+<!--                                    +99871 201 77 77-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="copyright-block">-->
+<!--            <div class="container">-->
+<!--                <span class="footer-copyright text-center">-->
+<!--                    ⓒ 2017-2021 Все права защишены Asialuxe Travel-->
+<!--                </span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
+
+<footer class="py-md-4 shp">
+
+    <div class="container pt-4" style="border-top: 1px solid #dde3ed;">
+        <div class="row ">
+
+
+            <div class="col-md-2 col-6 mb-3">
+                <nav class="f-roboto">
+                    <a class="d-block mb-1" href="#"><i class="far fa-handshake"></i> Агентствам</a>
+                    <a class="d-block mb-1" href="#">О компании</a>
+                    <a class="" target="_blank" href="#">Публичная оферта</a>
+
+                </nav>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <a href="https://play.google.com/store/apps/details?id=uz.asialuxe.android" class="d-block mb-1"><img
+                        width="120px" src="resource/images/play%20market.png"></a>
+                <a href="https://apps.apple.com/ru/app/asialuxe-travel/id1557116939"><img width="120px"
+                                                                                          src="resource/images/app%20store.png"></a>
+
+                <!--
+                        <span class='text-sm mb-1  d-block'>Лицензия: №-13223</span>
+                        <div><img src="/upload/imgs/dmc/tursab.png" alt="HY logo" height="45px"></div>
+                -->
+            </div>
+            <div class="col-md-2 col-6 mb-3">
+                <span class="text-sm  d-block">Официальный агент</span>
+                <div><img src="https://asialuxe.uz/assets/img/HY@2x.png" alt="HY logo" height="45px"></div>
+
+                <nav class="f-roboto">
+                </nav>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <span class="text-sm mb-2 d-block">Принимаем к оплате</span>
+                <div class="d-flex align-items-center">
+                    <img height="33px" class="mr-1" src="resource/images/uzcard.png">
+                    <img height="33px" class="mr-1" src="resource/images/visa.png">
+                    <img height="33px" class="mr-1" src="resource/images/master.png">
+
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="d-flex align-items-center justify-content-between">
                     <div>
-                        <div class="footer-blocks d-flex flex-column align-items-start justify-content-center">
-                            <span class="footer-text">
-                                Принимаем к оплате
-                            </span>
-                            <div class="pay-img-block d-flex align-items-center justify-content-between">
-                                <img src="resource/images/uzcard.png" alt="">
-                                <img src="resource/images/visa.png" alt="">
-                                <img src="resource/images/master.png" alt="">
-                            </div>
-                        </div>
-                        <div class="footer-blocks d-flex align-items-center justify-content-center">
-                        <div class="footer-qr">
-                            <img src="resource/images/qrcode-footer.png" alt="">
-                        </div>
-                        <div class="footer-social-block">
-                            <div class="social-block">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                            <div class="footer-phone">
-                                <a href="tel:+998712017777">
-                                    <i class="fas fa-phone-volume"></i>
-                                    +99871 201 77 77
-                                </a>
-                            </div>
-                        </div>
+                        <img src="resource/images/qrcode-footer.png" width="80px">
                     </div>
+                    <div class="text-center">
+                        <div class="d-flex mb-3">
+                            <a target="_blank" href="https://www.facebook.com/asia.luxe.travel" class="soc-btn soc-fb mr-3">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a target="_blank" href="https://instagram.com/asialuxe.travel" class="soc-btn soc-inst mr-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a target="_blank" href="https://t.me/Asialuxe" class="soc-btn soc-tg mr-3">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCqlYt1cED7Fn0tNpXvZ5MaQ" class="soc-btn soc-yutb">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <a target="_blank" href="tel:+998712017777" class="h5 w-100"><i class="fa fa-phone"></i> <b>+998</b> 71 201 77 77</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="copyright-block">
-            <div class="container">
-                <span class="footer-copyright text-center">
-                    ⓒ 2017-2021 Все права защишены Asialuxe Travel
-                </span>
-            </div>
-        </div>
-    </footer>
 
-    <script type="text/javascript" src="resource/bootstrap/js/bootstrap.js"></script>
+        <div class="text-center text-sm">
+            <hr>
+            © 2017 - 2021 Все права защишены Asialuxe Travel
+        </div>
+
+    </div>
+</footer>
+
     <script defer src="resource/fontawesome/js/all.js"></script>
     <script defer src="resource/fontawesome/js/brands.js"></script>
     <script defer src="resource/fontawesome/js/solid.js"></script>
@@ -476,5 +579,6 @@
     <script src="resource/js/parallax.js"></script>
     <script defer src="resource/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="resource/bootstrap/js/bootstrap.js"></script>
     </body>
 </html>
