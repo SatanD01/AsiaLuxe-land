@@ -1263,10 +1263,15 @@ header a.d-block.btn.btn-sm.bc-grey.color-inherit.dropdown-toggle.d-flex.align-i
     border-radius: 1rem !important;
     border: 1px solid #2948ff;
     transition: 0.2s;
+    color: #3c3c3c;
 }
 
 header a.d-block.btn.btn-sm.bc-grey.color-inherit.dropdown-toggle.d-flex.align-items-center:hover {
     transition: 0.2s;
     color: white;
     background-color: #2948ff;
+}
+
+body .text-block-title {
+    margin-bottom: 40px !important;
 }
